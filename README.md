@@ -1,2 +1,2 @@
-# ti3v31-2025
+# Curso de Programación Front-End
 Repositorio del curso de Programación Front-End
