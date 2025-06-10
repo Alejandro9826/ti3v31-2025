@@ -1,40 +1,73 @@
 <!DOCTYPE html>
-<html>
-    <head>       
-    </head>
-    <body>
-        <h1>Raíces Digitales</h1>
-        <img src="assets/el-arte-callejero-forma-parte-de-los-procesos-de-creacion-de-cultura.jpg"/>
-        <p>Te damos la bienvenida a nuestro programa de talleres, para que disfrutes y lo pases muy bien.</p>
-        <p>Contamos con diferentes tipos de talleres:<p>
-        <ul>
-            <h2>Teatro</h2>
-            <p>Disfruta de forma comunicativa combinando elementos como la actuación, la escritura, la música, la escenografía y la iluminación para crear una experiencia artística.</p>
-            <p>Horarios: lunes a viernes, desde las 08:30 hasta las 12:00</p>
-            <h2>Danza</h2>
-            <p>Forma parte de este tipo de arte que expresa emociones y narrativas a través del movimiento corporal rítmico, generalmente con música.</p>
-            <h2>Música Urbana</h2>
-            <p>Únete a una variedad de estilos musicales que surgen en las calles y subculturas urbanas. Abarca géneros como el hip-hop, el reguetón, el trap, y otros que se mezclan y evolucionan constantemente.</p>
-        </ul>
-        <h2>Completa el formulario y se parte de esta experiencia:</h2>
-        <form>
-            <label for="fname">Nombre:</label>
-            <input type="text" id="fname" name="fname"><br><br>
-            <label for="lname">Correo:</label>
-            <input type="text" id="lname" name="lname"><br><br>
-            <label for="cars">Selecciona un taller:</label>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Raíces Digitales</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
 
-            <select id="cars">
-            <option value="teatro">Teatro</option>
-            <option value="saab">Danza</option>
-            <option value="opel">Música Urbana</option>
-            </select>
-            <input type="submit" value="Submit">
-        </form>
-        <footer>
-            <p>Siguenos en nuestras redes sociales y escribenos al correo si tienes alguna consulta</p>
-            <p><a href="mailto:hege@example.com">raicesdigitales@gmail.com</a></p>
-          </footer>
+  <header>
+    <h1>Raíces Digitales</h1>
+    <p class="eslogan">Arte que une a la comunidad</p>
+  </header>
 
-    </body>
+  <section class="presentacion">
+    <img src="assets/el-arte-callejero-forma-parte-de-los-procesos-de-creacion-de-cultura.jpg" alt="Arte urbano representativo" />
+  </section>
+
+  <section class="talleres">
+    <h2>Nuestros Talleres</h2>
+
+    <article class="card">
+      <h3>Teatro</h3>
+      <p>Combinamos actuación, música y escenografía para expresarte libremente.</p>
+      <p><strong>Horario:</strong> Lunes a Viernes, 08:30 - 12:00</p>
+    </article>
+
+    <article class="card">
+      <h3>Danza</h3>
+      <p>Explora el movimiento y la música para conectar con tus emociones.</p>
+      <p><strong>Horario:</strong> Martes y Jueves, 15:00 - 17:00</p>
+    </article>
+
+    <article class="card">
+      <h3>Música Urbana</h3>
+      <p>Descubre el hip-hop, trap y más, creando sonidos desde la calle.</p>
+      <p><strong>Horario:</strong> Miércoles y Viernes, 16:00 - 19:00</p>
+    </article>
+  </section>
+
+  <section class="formulario">
+    <h2>Inscríbete a un taller</h2>
+    <form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" />
+
+      <label for="correo">Correo electrónico:</label>
+      <input type="text" id="correo" name="correo" />
+
+      <label for="taller">Taller de interés:</label>
+      <select id="taller" name="taller">
+        <option value="teatro">Teatro</option>
+        <option value="danza">Danza</option>
+        <option value="musica">Música Urbana</option>
+      </select>
+
+      <input type="submit" value="Enviar" />
+    </form>
+  </section>
+
+  <footer>
+    <p>Síguenos en redes sociales:</p>
+    <ul>
+      <li><a href="#">Facebook</a></li>
+      <li><a href="#">Instagram</a></li>
+      <li><a href="#">TikTok</a></li>
+    </ul>
+    <p>Contacto: <a href="mailto:raicesdigitales@gmail.com">raicesdigitales@gmail.com</a></p>
+  </footer>
+
+</body>
 </html>
