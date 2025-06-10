@@ -45,13 +45,13 @@
     <h2>Inscríbete a un taller</h2>
     <form>
       <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" name="nombre" />
+      <input type="text" id="nombre" name="nombre" required />
 
       <label for="correo">Correo electrónico:</label>
-      <input type="text" id="correo" name="correo" />
+      <input type="email" id="correo" name="correo" required />
 
       <label for="taller">Taller de interés:</label>
-      <select id="taller" name="taller">
+      <select id="taller" name="taller" required>
         <option value="teatro">Teatro</option>
         <option value="danza">Danza</option>
         <option value="musica">Música Urbana</option>

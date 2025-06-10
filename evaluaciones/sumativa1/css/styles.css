@@ -110,6 +110,12 @@ form input[type="submit"] {
   cursor: pointer;
 }
 
+.social-icon {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
 footer {
   background-color: #2E2E2E;
   color: white;
@@ -129,10 +135,4 @@ footer ul {
 footer a {
   color: #F0C808;
   text-decoration: none;
-}
-
-footer img {
-  width: 60px;
-  height: 60px;
-  object-fit: contain;
 }
