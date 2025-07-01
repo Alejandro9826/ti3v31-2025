@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raíces Digitales</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Raíces Digitales</h1>
+    <p class="eslogan">Arte que une a la comunidad</p>
+  </header>
+
+  <section class="presentacion">
+    <img src="assets/el-arte-callejero-forma-parte-de-los-procesos-de-creacion-de-cultura.jpg" alt="Arte urbano representativo">
+  </section>
+
+  <section class="talleres">
+    <h2>Nuestros Talleres</h2>
+    <div class="cards">
+      <article class="card">
+        <h3>Teatro</h3>
+        <p>Combinamos actuación, música y escenografía para expresarte libremente.</p>
+        <p><strong>Horario:</strong> Lunes a Viernes, 08:30 - 12:00</p>
+      </article>
+      <article class="card">
+        <h3>Danza</h3>
+        <p>Explora el movimiento y la música para conectar con tus emociones.</p>
+        <p>Conecta con tus emociones a través del movimiento y la música.</p>
+        <p><strong>Horario:</strong> Martes y Jueves, 15:00 - 17:00</p>
+      </article>
+      <article class="card">
+        <h3>Música Urbana</h3>
+        <p>Descubre el hip-hop, trap y más, creando sonidos desde la calle.</p>
+        <p><strong>Horario:</strong> Miércoles y Viernes, 16:00 - 19:00</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="formulario">
+    <h2>Inscríbete a un taller</h2>
+    <form id="inscripcionForm" novalidate> <label for="nombres">Nombres:</label>
+      <input type="text" id="nombres" name="nombres" required minlength="3" />
+      <span class="error-message" id="nombresError"></span>
+
+      <label for="apellidos">Apellidos:</label>
+      <input type="text" id="apellidos" name="apellidos" required minlength="3" />
+      <span class="error-message" id="apellidosError"></span>
+
+      <label for="rut">RUT (Ej: 12345678-9):</label>
+      <input type="text" id="rut" name="rut" required pattern="^\d{7,8}-[\dkK]$" title="Formato: nnnnnnnn-n o nnnnnnn-n (donde n es un número y el último dígito puede ser K)" />
+      <span class="error-message" id="rutError"></span>
+
+      <label for="fechaNacimiento">Fecha de Nacimiento (dd/mm/aaaa):</label>
+      <input type="text" id="fechaNacimiento" name="fechaNacimiento" placeholder="dd/mm/aaaa" required />
+      <span class="error-message" id="fechaNacimientoError"></span>
+
+      <label for="taller">Taller de interés:</label>
+      <select id="taller" name="taller" required>
+        <option value="">Selecciona un taller</option> <option value="teatro">Teatro</option>
+        <option value="danza">Danza</option>
+        <option value="musica">Música Urbana</option>
+      </select>
+      <span class="error-message" id="tallerError"></span>
+
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" name="correo" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Formato: direccion@dominio.pais. Solo letras, números, guiones y puntos para dirección y dominio. Solo letras y números para país." />
+      <span class="error-message" id="correoError"></span>
+
+      <label for="observaciones">Observaciones (Opcional):</label>
+      <textarea id="observaciones" name="observaciones" rows="4"></textarea>
+
+      <input type="submit" value="Registrarme">
+    </form>
+  </section>
+
+  <footer>
+    <p>Síguenos en redes sociales:</p>
+    <ul>
+      <li><a href="#"><img src="assets/Facebook-logo-1.png" alt="Facebook" class="social-icon" /></a></li>
+      <li><a href="#"><img src="assets/Instagram-Logo-2016.png" alt="Instagram" class="social-icon" /></a></li>
+      <li><a href="#"><img src="assets/tiktok_PNG30.png" alt="TikTok" class="social-icon" /></a></li>
+    </ul>
+    <p>Contacto: <a href="mailto:raicesdigitales@gmail.com">raicesdigitales@gmail.com</a></p>
+  </footer>
+
+  <script src="js/main.js"></script> </body>
+</html>
