@@ -1,0 +1,344 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F5F5F5;
+    color: #2E2E2E;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1B1F3B;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #D72638;
+    font-size: 2.5rem;
+}
+
+.eslogan {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    color: white;
+}
+
+.presentacion img {
+    width: 75%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.talleres {
+    padding: 2rem;
+    text-align: center;
+}
+
+.talleres h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #1B1F3B;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: white;
+    border-left: 5px solid #F0C808;
+    padding: 1rem;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    color: #D72638;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+}
+
+.formulario {
+    padding: 2rem;
+    background-color: white;
+}
+
+.formulario h2 {
+    text-align: center;
+    color: #1B1F3B;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 1rem;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+form input[type="submit"] {
+    background-color: #D72638;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.social-icon {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+footer {
+    background-color: #2E2E2E;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1rem 0;
+    padding: 0;
+}
+
+footer a {
+    color: #F0C808;
+    text-decoration: none;
+}
+
+.error-message {
+    color: #D72638;
+    font-size: 0.85rem;
+    margin-top: -0.8rem;
+    margin-bottom: 0.5rem;
+    display: block;
+    height: 1.2rem;
+}
+
+input.field-error,
+select.field-error,
+textarea.field-error {
+    border-color: #D72638 !important;
+}
+
+.listado-inscripciones {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.listado-inscripciones h2 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #1B1F3B;
+}
+
+.overflow-x-auto {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+    color: #333;
+}
+
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+.td-correo {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.td-taller {
+    font-weight: 600;
+    color: #D72638;
+}
+
+.td-descripcion {
+    font-size: 0.85rem;
+    color: #777;
+    max-width: 250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.td-profesor {
+    color: #555;
+}
+
+.mensaje-estado {
+    text-align: center;
+    font-size: 1.25rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+.mensaje-exito {
+    color: green;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: #e6ffe6;
+    border: 1px solid green;
+    border-radius: 4px;
+}
+
+.mensaje-error {
+    color: #D72638;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: #ffe6e6;
+    border: 1px solid #D72638;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header .eslogan {
+        font-size: 1rem;
+    }
+
+    .presentacion img {
+        height: 300px;
+    }
+
+    .talleres h2, .formulario h2, .listado-inscripciones h2 {
+        font-size: 1.8rem;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .formulario form {
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        border: 1px solid #ccc;
+        margin-bottom: 1rem;
+    }
+
+    td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+        text-align: right;
+    }
+
+    td:before {
+        position: absolute;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+        content: attr(data-label);
+    }
+
+    .td-descripcion {
+        max-width: none;
+        white-space: normal;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header .eslogan {
+        font-size: 0.9rem;
+    }
+
+    .presentacion img {
+        height: 200px;
+    }
+
+    .talleres h2, .formulario h2, .listado-inscripciones h2 {
+        font-size: 1.5rem;
+    }
+
+    .formulario input[type="submit"] {
+        padding: 10px 15px;
+        font-size: 1rem;
+    }
+}
